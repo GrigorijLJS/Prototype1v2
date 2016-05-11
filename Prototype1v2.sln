@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "Prototype1v1\GUI.csproj", "{A88BD8FD-451F-46FA-9612-860DD08D937A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RageAssetManager", "..\asset-proof-of-concept-demo_CSharp-master\RageAssetManager\RageAssetManager.csproj", "{DA8E9056-2E52-4029-81EB-A2D167614C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HintingSystem", "HintingSystem\HintingSystem.csproj", "{FEC0F445-4E94-46D0-BB9C-A2D84C48ADF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A88BD8FD-451F-46FA-9612-860DD08D937A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88BD8FD-451F-46FA-9612-860DD08D937A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88BD8FD-451F-46FA-9612-860DD08D937A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88BD8FD-451F-46FA-9612-860DD08D937A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8E9056-2E52-4029-81EB-A2D167614C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8E9056-2E52-4029-81EB-A2D167614C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8E9056-2E52-4029-81EB-A2D167614C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8E9056-2E52-4029-81EB-A2D167614C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC0F445-4E94-46D0-BB9C-A2D84C48ADF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC0F445-4E94-46D0-BB9C-A2D84C48ADF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC0F445-4E94-46D0-BB9C-A2D84C48ADF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC0F445-4E94-46D0-BB9C-A2D84C48ADF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

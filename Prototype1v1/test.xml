@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<AllActivitiesData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Activities>
+    <ActivityData activity_ID="h" recall_ID="rec" recallInputThresholds="1 2 34" recongnition_ID="" recongnitionInputThresholds="" classification_ID="" classificationInputThresholds="" implementation_ID="" implementationInputThresholds="" customErrorsIDs="custom" customErrorsInputThresholds="3333,3333,3333" time_on_activity_thresholds="56:56:56" />
+    <ActivityData activity_ID="gh" recall_ID="rec2" recallInputThresholds="1 2 34767676 1 2 34767676 1 2 34767676 1 2 34767676" recongnition_ID="recog2" recongnitionInputThresholds="1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5" classification_ID="clas2" classificationInputThresholds="54 54 54" implementation_ID="implem" implementationInputThresholds="9090 9090" customErrorsIDs="custom2" customErrorsInputThresholds="8888" time_on_activity_thresholds="" />
+    <ActivityData activity_ID="trtr" recall_ID="rec3" recallInputThresholds="878 878" recongnition_ID="recog3" recongnitionInputThresholds="76767676 76767676" classification_ID="clas3" classificationInputThresholds="76 76" implementation_ID="implem3" implementationInputThresholds="" customErrorsIDs="custom3" customErrorsInputThresholds="09090990" time_on_activity_thresholds="76:76:76" />
+    <ActivityData activity_ID="12" recall_ID="rec4" recallInputThresholds="0" recongnition_ID="recog4" recongnitionInputThresholds="0 0 0 0 0 0" classification_ID="clas4" classificationInputThresholds="787800000" implementation_ID="implem4" implementationInputThresholds="" customErrorsIDs="custom4" customErrorsInputThresholds="0000000,0,00,0,,,0,0,0,0,0,0,0,0,0," time_on_activity_thresholds="" />
+  </Activities>
+  <game_score_thresholds>
+    <int>9009</int>
+    <int>9000</int>
+  </game_score_thresholds>
+</AllActivitiesData>

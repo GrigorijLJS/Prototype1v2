@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<AllActivitiesData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Activities>
+    <ActivityData activity_ID="gh" recall_ID="" recallInputThresholds="" recongnition_ID="" recongnitionInputThresholds="" classification_ID="" classificationInputThresholds="" implementation_ID="" implementationInputThresholds="" customErrorsIDs="" customErrorsInputThresholds="" time_on_activity_thresholds="" />
+  </Activities>
+  <game_score_thresholds />
+</AllActivitiesData>
