@@ -32,7 +32,7 @@ namespace Prototype1v1
 {
     public partial class Form1 : Form
     {
-
+        /*
         private HintingAsset hintAssetObject = new HintingAsset();
 
         //////////////////old code
@@ -46,7 +46,7 @@ namespace Prototype1v1
         private TimeMetrics timeMetricsObject = new TimeMetrics();
         private ActivityMetrics taskMetricsObject = new ActivityMetrics();
         private HintMetrics hintMetricsObject = new HintMetrics();
-        private ErrorMetrics errorMetricsObject = new ErrorMetrics();
+        private ErrorMetrics errorMetricsObject = new ErrorMetrics();*/
 
         //private Stopwatch stopwatch = new Stopwatch();
 
@@ -87,7 +87,7 @@ namespace Prototype1v1
 
             if (e.CloseReason == CloseReason.WindowsShutDown) return;
 
-            metricsObject.timeMetricsObject.StartAndStopTimeCounterSinceBeginningOfGame(false);
+            //metricsObject.timeMetricsObject.StartAndStopTimeCounterSinceBeginningOfGame(false);
             
             /*MessageBox.Show(this, "Oh, don't go, Boo will miss you. :(\n Log file created (NOT)!"
                 , "Total time:" + metricsObject.timeMetricsObject.GetStoredCountTimeSinceBeginningOfGame());

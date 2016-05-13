@@ -156,7 +156,7 @@ namespace Prototype1v1
 
 
     [XmlRoot]
-    public class AllActivitiesData
+    public class AllActivitiesConfigData
     {
         [XmlArray("Activities"), XmlArrayItem("ActivityData")]
         public List<ActivityData> inputActivitiesList// = new List<ActivityData>();
@@ -180,7 +180,7 @@ namespace Prototype1v1
         }
 
 
-        public AllActivitiesData()
+        public AllActivitiesConfigData()
         {
             inputActivitiesList = new List<ActivityData>();
             game_score_thresholds = new List<int>();
@@ -188,21 +188,21 @@ namespace Prototype1v1
 
         public void SaveToFile(string path)
         {
-            var serializer = new XmlSerializer(typeof(AllActivitiesData));
+            var serializer = new XmlSerializer(typeof(AllActivitiesConfigData));
             using (var stream = new FileStream(path, FileMode.Create))
             {
                 serializer.Serialize(stream, this);
             }
         }
 
-        public static AllActivitiesData LoadFromFile(string path)
+        public AllActivitiesConfigData LoadFromFile(string path)
         {
             try
             {
-                var serializer = new XmlSerializer(typeof(AllActivitiesData));
+                var serializer = new XmlSerializer(typeof(AllActivitiesConfigData));
                 using (var stream = new FileStream(path, FileMode.Open))
                 {
-                    return serializer.Deserialize(stream) as AllActivitiesData;
+                    return serializer.Deserialize(stream) as AllActivitiesConfigData;
                 }
             }
             catch (Exception e)

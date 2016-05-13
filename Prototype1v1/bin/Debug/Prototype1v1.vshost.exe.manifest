@@ -42,26 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HintingSystem.dll" size="32768">
-      <assemblyIdentity name="HintingSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EEYpYWJW5lvuEuWQb2GhAQ41pGY31Mzxjt5k0Z4SrBo=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Prototype1v1.exe" size="37264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Prototype1v1.exe" size="36752">
       <assemblyIdentity name="Prototype1v1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>26u3aVqMl1Txh2TXx2/JTiMlgsuOW5rKqRGYbYS7Esc=</dsig:DigestValue>
+        <dsig:DigestValue>HlwC3TkStDHcEiL5xBTmbP/cSUl3VeN17yS111E2Nlk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

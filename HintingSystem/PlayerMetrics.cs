@@ -31,6 +31,13 @@ namespace Prototype1v1
 
     public class PlayerMetrics
     {
+        public AllActivitiesConfigData configDataObj
+        {
+            get;
+            set;
+        }
+
+        
 
         //objects for the "subordinate" classes that contain their metrics by type
         public TimeMetrics timeMetricsObject
@@ -183,8 +190,96 @@ namespace Prototype1v1
 
             game_score_default_triggers.Add(3);
             game_score_default_triggers.Add(23);
+
+            configDataObj = new AllActivitiesConfigData();
+
+            //the path is hardcoded, for now
+            configDataObj.LoadFromFile(@"D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1");
+            StoreConfigDataOfActivitiesForUseDuringRuntime();
+            
         }
 
+
+        private void StoreConfigDataOfActivitiesForUseDuringRuntime()
+        {
+
+            foreach(int score_threshold in configDataObj.game_score_thresholds)
+            {
+                game_score_triggers.Add(score_threshold);
+            }
+
+            foreach(ActivityData activity_config_data in configDataObj.inputActivitiesList)
+            {
+                ActivityMetrics new_activity = new ActivityMetrics();
+                if(activity_config_data.recall_ID!=null && activity_config_data.recallInputThresholds.Count>0)
+                {
+                    ErrorMetrics recall_err = new ErrorMetrics();
+                    LoopThroughAndSaveConfigThresholdData(activity_config_data.recallInputThresholds,
+                        recall_err.error_number_thresholds);
+                    new_activity.EncouteredErrorsList.Add(activity_config_data.recall_ID, recall_err);
+                }
+                if(activity_config_data.recongnition_ID!=null && activity_config_data.recongnitionInputThresholds.Count>0)
+                {
+                    ErrorMetrics recognition_err = new ErrorMetrics();
+                    LoopThroughAndSaveConfigThresholdData(activity_config_data.recongnitionInputThresholds,
+                        recognition_err.error_number_thresholds);
+                    new_activity.EncouteredErrorsList.Add(activity_config_data.recongnition_ID, recognition_err);
+                }
+                if(activity_config_data.classification_ID!=null && activity_config_data.classificationInputThresholds.Count>0)
+                {
+                    ErrorMetrics classification_err = new ErrorMetrics();
+                    LoopThroughAndSaveConfigThresholdData(activity_config_data.classificationInputThresholds,
+                        classification_err.error_number_thresholds);
+                    new_activity.EncouteredErrorsList.Add(activity_config_data.classification_ID, classification_err);
+                }
+                if(activity_config_data.implementation_ID!=null && activity_config_data.implementationInputThresholds.Count>0)
+                {
+                    ErrorMetrics implementation_err = new ErrorMetrics();
+                    LoopThroughAndSaveConfigThresholdData(activity_config_data.implementationInputThresholds,
+                        implementation_err.error_number_thresholds);
+                    new_activity.EncouteredErrorsList.Add(activity_config_data.implementation_ID, implementation_err);
+                }
+
+                
+                if((activity_config_data.customErrorsIDs.Count>0 && activity_config_data.customErrorsInputThresholds.Count>0)&&
+                    (activity_config_data.customErrorsIDs.Count==activity_config_data.customErrorsInputThresholds.Count))
+                {
+
+                    for(int i=0;i<activity_config_data.customErrorsIDs.Count;i++)
+                    {
+                        ErrorMetrics custom_err = new ErrorMetrics();
+                        string[] split_thresholds = activity_config_data.customErrorsInputThresholds.ElementAt(i).Split(
+                            ' ', ',', ';', '.', ':', '\t');
+                        for (int j = 0; j < split_thresholds.Count();j++)
+                        {
+                            custom_err.error_number_thresholds.Add(Int32.Parse(split_thresholds.ElementAt(j)));
+                        }
+                            new_activity.EncouteredErrorsList.Add(activity_config_data.customErrorsIDs.ElementAt(i), custom_err);
+                    }
+                }
+
+                if(activity_config_data.time_on_activity_thresholds.Count>0)
+                {
+                    foreach(string time_threshold in activity_config_data.time_on_activity_thresholds)
+                    {
+                        string[] split_threshold = time_threshold.Split(':');
+                        new_activity.list_of_times_on_activity.Add(new TimeSpan(Int32.Parse(split_threshold.ElementAt(0)),
+                            Int32.Parse(split_threshold.ElementAt(1)),Int32.Parse(split_threshold.ElementAt(2))));
+                    }
+                }
+
+
+                gameActivitiesList.Add(activity_config_data.activity_ID, new_activity);
+            }
+        }
+
+        private void LoopThroughAndSaveConfigThresholdData(List<int> list_of_thresholds, List<int> empty_list_of_thresholds)
+        {
+            foreach(int threshold in list_of_thresholds)
+            {
+                empty_list_of_thresholds.Add(threshold);
+            }
+        }
 
         /*public int GetGameScore()
         {

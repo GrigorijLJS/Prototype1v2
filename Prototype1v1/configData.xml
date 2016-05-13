@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
-<AllActivitiesData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<AllActivitiesConfigData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Activities>
-    <ActivityData activity_ID="gh" recall_ID="" recallInputThresholds="" recongnition_ID="" recongnitionInputThresholds="" classification_ID="" classificationInputThresholds="" implementation_ID="" implementationInputThresholds="" customErrorsIDs="" customErrorsInputThresholds="" time_on_activity_thresholds="" />
+    <ActivityData activity_ID="fg" recall_ID="tyt" recallInputThresholds="5656" recongnition_ID="" recongnitionInputThresholds="" classification_ID="" classificationInputThresholds="" implementation_ID="" implementationInputThresholds="" customErrorsIDs="454" customErrorsInputThresholds="5757.45645" time_on_activity_thresholds="45:45:45" />
   </Activities>
-  <game_score_thresholds />
-</AllActivitiesData>
+  <game_score_thresholds>
+    <int>12</int>
+    <int>13</int>
+    <int>41</int>
+  </game_score_thresholds>
+</AllActivitiesConfigData>

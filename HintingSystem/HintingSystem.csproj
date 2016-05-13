@@ -58,6 +58,10 @@
       <Project>{da8e9056-2e52-4029-81eb-a2d167614c47}</Project>
       <Name>RageAssetManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Prototype1v1\GUI.csproj">
+      <Project>{a88bd8fd-451f-46fa-9612-860dd08d937a}</Project>
+      <Name>GUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\MyAsset.VersionAndDependencies.xml" />

@@ -23,12 +23,9 @@ D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\obj\Debug\GUI.csproj.Ge
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\obj\Debug\Prototype1v1.Form2.resources
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\Prototype1v1.exe
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\Prototype1v1.pdb
-D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\HintingSystem.dll
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\RageAssetManager.dll
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\RageAssetManager.pdb
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\RageAssetManager.xml
-D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\HintingSystem.pdb
-D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\HintingSystem.xml
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\Prototype1v1.exe.manifest
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\bin\Debug\Prototype1v1.application
 D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1\obj\Debug\Prototype1v1.exe.manifest

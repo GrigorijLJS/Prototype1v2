@@ -123,10 +123,6 @@
       <Project>{da8e9056-2e52-4029-81eb-a2d167614c47}</Project>
       <Name>RageAssetManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HintingSystem\HintingSystem.csproj">
-      <Project>{fec0f445-4e94-46d0-bb9c-a2d84c48adf1}</Project>
-      <Name>HintingSystem</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

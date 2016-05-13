@@ -13,14 +13,14 @@ namespace Prototype1v1
     public partial class Form2 : Form
     {
 
-        private AllActivitiesData activitiesDataObj;
+        private AllActivitiesConfigData activitiesDataObj;
 
 
         public Form2()
         {
             InitializeComponent();
 
-            activitiesDataObj = new AllActivitiesData();
+            activitiesDataObj = new AllActivitiesConfigData();
 
             /*inputActivitiesList = new List<ActivityData>();
             game_score_thresholds = new List<int>();*/

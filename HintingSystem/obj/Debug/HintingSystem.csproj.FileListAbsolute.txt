@@ -16,3 +16,5 @@ D:\Visual Studio 2013 Projects\Prototype1v2\HintingSystem\bin\Debug\HintingSyste
 D:\Visual Studio 2013 Projects\Prototype1v2\HintingSystem\bin\Debug\RageAssetManager.dll
 D:\Visual Studio 2013 Projects\Prototype1v2\HintingSystem\bin\Debug\RageAssetManager.pdb
 D:\Visual Studio 2013 Projects\Prototype1v2\HintingSystem\bin\Debug\RageAssetManager.xml
+D:\Visual Studio 2013 Projects\Prototype1v2\HintingSystem\bin\Debug\Prototype1v1.exe
+D:\Visual Studio 2013 Projects\Prototype1v2\HintingSystem\bin\Debug\Prototype1v1.pdb
