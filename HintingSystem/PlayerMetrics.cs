@@ -194,6 +194,8 @@ namespace Prototype1v1
             configDataObj = new AllActivitiesConfigData();
 
             //the path is hardcoded, for now
+            //this might work: AppDomain.CurrentDomain.BaseDirectory;
+            //once these files are made into dlls
             configDataObj.LoadFromFile(@"D:\Visual Studio 2013 Projects\Prototype1v2\Prototype1v1");
             StoreConfigDataOfActivitiesForUseDuringRuntime();
             

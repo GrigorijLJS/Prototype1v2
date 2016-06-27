@@ -142,7 +142,7 @@ namespace Prototype1v1
                         int distance_between_strings = ComputeDistance(corr_answer, play_answ);
                         float string_similarity = 0;
 
-                        //similarity is based on the formulas from 
+                        //measuring similarity is based on the formulas from 
                         //http://hpi.de/fileadmin/user_upload/fachgebiete/naumann/folien/SS13/DPDC/DPDC_12_Similarity.pdf
                         if (corr_answer.Length > play_answ.Length)
                         {
